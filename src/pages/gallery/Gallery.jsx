@@ -18,12 +18,8 @@ const Gallery = () => {
   
   const [list, setList] = useState(images);
 
-  /* СПРОСИ КАК ЛУЧШЕ? */ 
   const HandleRemove = (id) => {
-    console.log(list);
-    // const deletVal=[...val]
-    // deletVal.splice(i,1) КАК ЛУЧШЕ??????
-    // setVal(deletVal)  
+    console.log(list); 
     const deleteImage = list.filter((l) => l.id !== id);
     setList (deleteImage);
   }
@@ -40,7 +36,7 @@ const Gallery = () => {
     <section className="gallery">
       <div className="container gallery__container">
         {
-          list.map((data, i) => {
+          list.map((data) => {
             return <article key={data.id}>
               <img src={data.image} alt={`Gallery Image ${data.id+ 1}`} />
               <span onClick={() => HandleRemove(data.id)}>delete TEST</span>

@@ -4,29 +4,41 @@ import {SiOpenaigym} from 'react-icons/si'
 
 export const links = [
     {
-        name: "Home",
+        name: "Главная",
         path: '/'
     },
     {
-        name: "About",
+        name: "О клубе",
         path: '/about'
     },
     {
-        name: "Gallery",
-        path: '/gallery'
+        name: "Прайс",
+        path: '/price'
     },
     {
-        name: "Plans",
-        path: '/plans'
+        name: "Расписание",
+        path: '/schedule'
     },
     {
-        name: "Trainers",
+        name: "Тренеры",
         path: '/trainers'
     },
     {
-        name: "Contact",
+        name: "Филиалы",
+        path: '/branches'
+    },
+    {
+        name: "Контакты",
         path: '/contact'
-    }
+    },
+    // {
+    //     name: "Планы",
+    //     path: '/plans'
+    // },
+    // {
+    //     name: "Галерея",
+    //     path: '/gallery'
+    // },
 ]
 
 
